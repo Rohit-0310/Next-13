@@ -18,11 +18,11 @@ const Page = async () => {
     return (
         <div>
             <h1>User Page</h1>
-            <div>
+            <div className={styles.mainPage}>
                 {data.map((e) => {
                     // console.log(e)
                     return (
-                        <div className={styles.top}>
+                        <div className={styles.card}>
                             <div>
                                 <img src={e.image} width={200} height={200} alt="userImage" />
                             </div>

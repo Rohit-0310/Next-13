@@ -1,5 +1,5 @@
 import { Roboto } from '@next/font/google';
-
+import modules from './layout.module.scss'
 const roboto = Roboto({
     weight: '400',
     subsets: ['latin'],
@@ -11,7 +11,7 @@ export default function layout({ children }) {
             <head>
                 <title>My Next App</title>
             </head>
-            <body>
+            <body className={modules.body}>
                 <nav>Navbar</nav>
                 {children}
             </body>
